@@ -6,6 +6,8 @@ a=20;
 b=10;
         System.out.println("Value of a before swap:"+a);
         System.out.println("Value of b before swap:"+b);
+
+//swap 2 numbers logic
 c=a;
 a=b;
 b=c;
