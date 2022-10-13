@@ -15,3 +15,8 @@ System.out.println("Value of a after swap:"+a);
 System.out.println("Value of b after swap:"+b);
     }
 }
+//output
+//Value of a before swap:20
+//Value of b before swap:10
+//Value of a after swap:10
+//Value of b after swap:20
