@@ -5,10 +5,12 @@ public class assignment1 {
 int a,b,c;
 a=20;
 b=10;
+        System.out.println("Value of a before swap:"+a);
+        System.out.println("Value of b before swap:"+b);
 c=a;
 a=b;
 b=c;
 System.out.println("Value of a after swap:"+a);
-System.out.println("Value of a after swap:"+b);
+System.out.println("Value of b after swap:"+b);
     }
 }
