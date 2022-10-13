@@ -1,6 +1,5 @@
 public class assignment1 {
     public static void main(String[] args) {
-        System.out.println("Hello");
        // Write a program to swap two number. For example a=10 and b=20 output should be a=20 and b=10
 int a,b,c;
 a=20;
