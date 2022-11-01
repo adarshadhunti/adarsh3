@@ -26,7 +26,7 @@ public class students {
         System.out.println("Input number of students:");
         int n = Integer.parseInt(in.nextLine().trim());
         System.out.println("Input Student String name, String email, String phone,String address,String status");
-        Student[] stu = new Student[3];
+        Student[] stu = new Student[n];
         for (int i = 0; i < n; i++) {
             stu[i] = new Student();
         }
