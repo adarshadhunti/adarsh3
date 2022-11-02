@@ -1,5 +1,20 @@
 package assigment2;
 
+class Trainer {
+    String name;
+    String department;
+    String email;
+    int id;
+    Trainer(String name,String department,String email,int id)
+    {
+        this.name=name;
+        this.department=department;
+        this.email=email;
+        this.id=id;
+    }
+
+}
+
 public class trainerclass{
     public static void main(String[] args) {
         //task1
