@@ -55,3 +55,36 @@ public class students {
         in.close();
     }
 }
+//output
+//Input number of students:
+//2
+//Input Student String name, String email, String phone,String address,String status
+//enter student details
+//enter student name
+//adarsh
+//enter student email
+//adarsh@mail.com
+//enter student phone
+//9900998949
+//enter student address
+//address1
+//enter student status
+//single
+//enter student details
+//enter student name
+//ramu
+//enter student email
+//ramu@mail.com
+//enter student phone
+//345678
+//enter student address
+//ertyu
+//enter student status
+//mingle
+//enter which student details to display
+//1
+//ramu
+//ramu@mail.com
+//345678
+//ertyu
+//mingle
