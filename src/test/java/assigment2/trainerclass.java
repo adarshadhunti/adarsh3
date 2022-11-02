@@ -8,7 +8,7 @@ public class trainerclass{
         Trainer t3 =new Trainer("Mukesh","Dev ops","mukesh@gmail.com",3);
         System.out.println("name: "+ t1.name + "  email: " +t1.email);
 
-        //trainer 2
+        //task 2
         String[] trainers=new String[3];
         trainers[0]=t1.name;
         trainers[1]=t2.name;
