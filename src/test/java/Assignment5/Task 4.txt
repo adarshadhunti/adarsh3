@@ -1,0 +1,38 @@
+package Assignments;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AssignmentFiveTaskFour {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//div[@class='orangehrm-login-footer-sm']/a[1]")).click();
+		String lnkdinurl=driver.getTitle();
+		
+		driver.findElement(By.xpath("//div[@class='orangehrm-login-footer-sm']/a[2]")).click();
+		String fburl=driver.getTitle();
+		
+		driver.findElement(By.xpath("//div[@class='orangehrm-login-footer-sm']/a[3]")).click();
+		String Twitteurl=driver.getTitle();
+		
+		driver.findElement(By.xpath("//div[@class='orangehrm-login-footer-sm']/a[4]")).click();
+		String YoutubeURL=driver.getTitle();
+		
+		System.out.println("LinkedIn URL is "+lnkdinurl);
+		System.out.println("Facebook URL is "+fburl);
+		System.out.println("Twitter URL is "+Twitteurl);
+		System.out.println("YouTube URL is "+YoutubeURL);
+		Thread.sleep(3000);
+
+		driver.quit();
+		
+}
+
+}

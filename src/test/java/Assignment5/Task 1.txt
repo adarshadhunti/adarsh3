@@ -1,0 +1,46 @@
+package Assignments;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AssignmentFiveTaskOne {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		Thread.sleep(5000);
+		
+		String url=driver.getCurrentUrl();
+		if(url.endsWith("login"))
+		{
+			System.out.println("URL is ending with 'login'");
+		}
+		else
+		{
+			System.out.println("URL is not ending with 'login'");
+		}
+		if(url.contains("demo"))
+		{
+			System.out.println("URL contains 'demo'");
+		}
+		else
+			System.out.println("URL not contains 'demo'");
+		
+		String title=driver.getTitle();
+		if ( driver.getPageSource().contains("HRM"))
+		{
+			System.out.println("HRM text present in "+title);
+		}
+		else
+		{
+			System.out.println("HRM text not present in "+title);
+		}
+	      
+		
+	}
+}
+		
+
+

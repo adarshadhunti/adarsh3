@@ -1,0 +1,35 @@
+package Assignments;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AssignmentFiveTaskThree  {
+
+	@SuppressWarnings("unlikely-arg-type")
+	public static void main(String[] args) throws InterruptedException{
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+		
+		List<WebElement> urls=driver.findElements(By.xpath("//div[@class='orangehrm-login-footer-sm']"));
+		if(urls.contains("youtube"))
+		{
+			System.out.println(urls);
+
+		}
+		else
+		{
+			System.out.println(urls);
+		}
+		
+		driver.quit();
+		
+	}
+
+}

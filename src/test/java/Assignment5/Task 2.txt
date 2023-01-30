@@ -1,0 +1,25 @@
+package Assignments;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AssmntfiveTaskTwo {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		Thread.sleep(30000);
+		
+		/*boolean logo=driver.findElement(By.xpath("//img[@alt='orangehrm-logo']")).isDisplayed();
+		
+		System.out.println("Displayed is "+logo);*/
+		
+		Boolean c=driver.findElement(By.xpath("//img[@alt='orangehrm-logo']")).isEnabled();
+		System.out.println("Element is available "+c);
+	}
+
+}
